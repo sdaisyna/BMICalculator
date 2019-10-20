@@ -64,7 +64,7 @@
         android:layout_toRightOf="@id/weight"
         android:layout_marginTop="30dp"
         android:layout_below="@id/result"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:gravity="center"
         android:layout_marginLeft="60dp" />
 
