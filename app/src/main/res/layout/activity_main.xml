@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/bmiCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculator"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        android:paddingLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/bmiCalc"
+        android:text="Enter weight(kg) and height(m)"
+        android:textSize="20sp"
+        android:layout_marginTop="80dp"
+        android:paddingLeft="80dp"
+        android:paddingTop="20dp"/>
+
+
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_below="@id/result"
+        android:gravity="center"
+        android:inputType="number"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_below="@id/weight"
+        android:text="kg"
+        android:layout_marginLeft="110dp"
+        android:foregroundGravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/weight"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/result"
+        android:inputType="number"
+        android:gravity="center"
+        android:layout_marginLeft="60dp" />
+
+    <TextView
+        android:id="@+id/meter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_toRightOf="@id/kg"
+        android:layout_below="@id/height"
+        android:text="m"
+        android:layout_marginLeft="145dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Calculate"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_below="@id/weight"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="150dp"/>
+
+
+</RelativeLayout>
